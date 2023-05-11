@@ -46,9 +46,12 @@ export default function Cart({cart,setCart}){
     }
     return(
         <div className={style.cart}>
-            {cart.map(item=>(<CartItem key={item.id} item = {item} handleIncrement={handleIncrement} handleDecrement={handleDecrement}/>))}
+            <div className= {style["cart-items"]}>
+                {cart.map(item=>(<CartItem key={item.id} item = {item} handleIncrement={handleIncrement} handleDecrement={handleDecrement}/>))}
+            </div>
 
-            <p>{calculateTotal()}</p>
+            <p>Total: $ {calculateTotal()}</p>
+            <button className={style.checkout}>Checkout</button>
         </div>
     )
 }

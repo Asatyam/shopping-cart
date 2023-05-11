@@ -34,6 +34,7 @@ export default function Items({products, name, src, price,id,setCart}){
             <p>{name[0].toUpperCase()+name.slice(1)} Lorem ipsum dolor sit </p>
             <p>$ {price}</p>
             <button id = {id} onClick={handleClick}>Add to Cart</button>
+          
         </div>
     )
 

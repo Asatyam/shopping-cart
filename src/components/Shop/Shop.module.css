@@ -1,9 +1,8 @@
 .shop{
     
     padding:50px 100px ;
-    height: 20%;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
     background-color: #fafafa;
     
     gap:50px 30px;
