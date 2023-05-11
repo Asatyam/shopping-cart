@@ -1,11 +1,12 @@
 .shop{
     
+    padding:50px 100px ;
 
-    padding:20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
-    background-color: green;
-    gap:30px 15px;
-    place-items: center;
-    place-content: center;
+    grid-template-columns: repeat(auto-fill,minmax(340px, 1fr));
+    background-color: #fafafa;
+    
+    gap:50px 30px;
+    justify-content: center;
+    justify-items: center;
 }

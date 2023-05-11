@@ -8,7 +8,7 @@ export default function Shop(){
     const products = [{
         id:"1",
         name:"iphone",
-        src:"/Items/iphone.jpeg",
+        src:"/Items/iphone.png",
         price:"$ 1000.00",
     },
     {
@@ -48,7 +48,7 @@ export default function Shop(){
     },{
         id:"8",
         name:"monitor",
-        src:"/Items/monitor.jpeg",
+        src:"/Items/monitor.png",
         price:"$ 600.00",
     },{
         id:"9",

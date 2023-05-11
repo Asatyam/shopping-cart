@@ -1,13 +1,47 @@
 .item {
-    background-color: aliceblue;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 300px;
+    justify-content: center;
+    gap:5px;
+    height: 320px;
     width: 300px;
+    border:5px solid black;
+    border-radius:5px;
+    text-align: center;
 }
 .item img{
-    height: 200px;
-    width: 200px;
-   
+    height: 180px;
+    width: 80%;
+    
+}
+.item p:first-of-type{
+    
+    padding-top:8px;
+    border: 1px solid black;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    font-weight: 900;
+    margin:3px;
+    
+}
+.item button {
+
+    background-color: black;
+    color: white;
+    width: 80%;
+    border: 2px solid;
+    font-weight: 900;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    transition: 0.3s;
+    border: 2px solid teal;
+}
+.item button:hover{
+    background-color: white;
+    border:2px solid navy;
+    color:black;
 }
