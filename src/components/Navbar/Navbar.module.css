@@ -1,0 +1,31 @@
+.nav-bar{
+    display: flex;
+    height: 30px;
+    
+    background-color: aliceblue;
+    padding:20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar h2{
+    font-size:2rem;
+    font-weight: 900;
+}
+.nav-list{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    font-weight: 900;
+    font-size:1.3rem;
+}
+.cart-btn{
+    background: transparent;
+    border:none;
+
+
+}
+.cart-btn img{
+    height: 20px;
+    width: 20px;
+}

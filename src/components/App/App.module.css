@@ -1,0 +1,6 @@
+.app{
+    height: 100vh;
+    background: url("/background.jpeg") no-repeat  ;
+    background-position: 0px 70px;
+    background-size:100% 100%;
+}
