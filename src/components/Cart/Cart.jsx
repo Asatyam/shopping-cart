@@ -13,7 +13,7 @@ function CartItem({item, handleDecrement,handleIncrement}){
                     
                 <img src = {item.src} alt = {item.name}/>
                 <p> {item.name[0].toUpperCase()+item.name.slice(1)} Lorem ipsum dolor sit </p>
-                <p> {item.price}</p>
+                <p> $ {item.price}</p>
                 <button className={style.decrement} id = {item.id} onClick={handleDecrement}> - </button>
                 <p>{item.quantity}</p>
                 <button className={style.increment} id = {item.id} onClick = {handleIncrement}> + </button>
@@ -41,9 +41,14 @@ export default function Cart({cart,setCart}){
         setCart(c);
     }
 
+    const calculateTotal = ()=>{
+        return cart.reduce((total,item)=> total+(item.price*item.quantity),0)
+    }
     return(
         <div className={style.cart}>
             {cart.map(item=>(<CartItem key={item.id} item = {item} handleIncrement={handleIncrement} handleDecrement={handleDecrement}/>))}
+
+            <p>{calculateTotal()}</p>
         </div>
     )
 }
