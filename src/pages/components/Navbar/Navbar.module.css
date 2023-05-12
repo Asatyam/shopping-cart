@@ -19,6 +19,7 @@
     align-items: center;
     font-weight: 900;
     font-size:1.3rem;
+    position: relative;
 }
 .cart-btn{
 
@@ -32,11 +33,12 @@
 .cart-btn img{
     height: 18px;
     width: 18px;
+    background-color: white;
 }
 .totalItems {
-    position: absolute;
-    right: 11%;
-    top: 5%;
+    position: relative;
+    right: 25%;
+    top: 10px;
     border-radius: 50%;
     text-align: center;
     height: 15px;

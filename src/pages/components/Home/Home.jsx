@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import style from "./Home.module.css"
-import Navbar from "../Navbar/Navbar";
+import Link from "next/link";
 const Home = ()=>{
 
     return(
@@ -13,7 +13,7 @@ const Home = ()=>{
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 <br/> <br/>Quam ullam vitae sunt eaque voluptatibus accusantium rerum, pariatur modi. 
             </p>
-            <button> Shop Now</button>
+            <button><Link href = '/components/Shop/Shop'>Shop Now</Link></button>
             </div>
             
         </div>
