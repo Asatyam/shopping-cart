@@ -1,5 +1,5 @@
 import React,{useState}  from "react";
-import Items from "../Items/Items";
+import Items from "../../../Items/Items";
 import style from "./Shop.module.css"
 import { AppContext } from "../../context";
 import { useContext } from "react";

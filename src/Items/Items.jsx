@@ -6,6 +6,8 @@ import style from "./Items.module.css"
 
 export default function Items({products, name, src, price,id,setCart}){
 
+    console.log(name,products[0]);
+
     const handleClick = (e)=>{
         const obj  = products.find((product)=>product.id === e.target.id);
          const item = {
@@ -29,7 +31,9 @@ export default function Items({products, name, src, price,id,setCart}){
     }
    
     return (
+        
         <div className={style.item}>
+            {console.log(name)}
             <img src = {src} alt = {name}/>
             <p>{name[0].toUpperCase()+name.slice(1)} Lorem ipsum dolor sit </p>
             <p>$ {price}</p>
