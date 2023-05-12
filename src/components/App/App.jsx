@@ -89,6 +89,7 @@ const App = ()=>{
     return(
         <div className={style.app}>
             <Navbar/>
+            <Home/>
             <Shop cart = {cart} setCart = {setCart} products={products}/>
              <Cart cart = {cart} setCart = {setCart} products = {products}/>
             <p className = {style.totalItems}>{totalItems}</p> 
