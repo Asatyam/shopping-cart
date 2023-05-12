@@ -1,0 +1,24 @@
+.shop{
+    
+    padding:50px 100px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    background-color: #fafafa;
+    
+    gap:50px 30px;
+    justify-content: center;
+    justify-items: center;
+}
+.totalItems {
+    position: absolute;
+    right: 10%;
+    top: 4%;
+    border-radius: 50%;
+    text-align: center;
+    height: 15px;
+    width: 15px;
+    font-size: 0.9rem;
+    border: 50%;
+    background-color: white;
+    border: 1px solid black;
+}

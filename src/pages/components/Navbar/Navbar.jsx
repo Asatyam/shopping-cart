@@ -11,7 +11,7 @@ export default function Navbar(){
             <h2> TopShop</h2>
             <ul className={style['nav-list']}>
                 <li><Link href = "/">Home</Link></li>
-                <li><Link href = "/shop">Shop</Link></li>
+                <li><Link href = "/components/Shop/Shop">Shop</Link></li>
                 <li>
                     <Link href="/cart">
                         <button className={style['cart-btn']}>

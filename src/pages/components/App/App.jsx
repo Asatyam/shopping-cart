@@ -88,11 +88,10 @@ const App = ()=>{
     const totalItems = cart.reduce((total,x)=>total+x.quantity,0);
     return(
         <div className={style.app}>
-            <Navbar/>
+            
             <Home/>
-            <Shop cart = {cart} setCart = {setCart} products={products}/>
-             <Cart cart = {cart} setCart = {setCart} products = {products}/>
-            <p className = {style.totalItems}>{totalItems}</p> 
+             {/* <Cart cart = {cart} setCart = {setCart} products = {products}/> */}
+            
         </div>
     )
 }
