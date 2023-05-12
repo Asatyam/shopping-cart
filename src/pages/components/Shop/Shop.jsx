@@ -75,7 +75,7 @@ export default function Shop(){
         price:80.00,
     },
     ]
-     const {cart,setCart} = useContext(AppContext);
+     const {setCart} = useContext(AppContext);
 
     return(
         <div className={style.shop}>

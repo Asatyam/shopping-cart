@@ -7,7 +7,7 @@ import { useContext } from "react";
 
 export default function Navbar(){
 
-    const {cart,setCart} = useContext(AppContext);
+    const {cart} = useContext(AppContext);
      const totalItems = cart.reduce((total,x)=>total+x.quantity,0);
     return(
        <nav className={style['nav-bar']}>
@@ -19,7 +19,7 @@ export default function Navbar(){
                 <li>
                     <Link href="/components/Cart/Cart">
                         <button className={style['cart-btn']}>
-                        <img src="cart.png" alt="cart-icon"/>
+                        <img src="/cart.png" alt="cart-icon"/>
                     </button>
                     </Link>
                 </li>
