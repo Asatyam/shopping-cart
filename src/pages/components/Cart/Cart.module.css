@@ -1,6 +1,6 @@
 .cart{
     background-color: #cffafe;
-    height: 100%;
+    min-height: 100vh;
     padding: 50px 100px;
     display: flex;
     flex-direction: column;
