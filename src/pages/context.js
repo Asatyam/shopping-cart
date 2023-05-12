@@ -3,15 +3,7 @@ import { createContext ,useState} from 'react';
 export const AppContext = createContext(null);
 
 function Context({ children }) {
-  const [cart, setCart] = useState([
-    {
-      id: '1',
-      name: 'iphone',
-      src: '/Items/iphone.png',
-      price: 1000.0,
-      quantity: 1,
-    },
-  ]);
+  const [cart, setCart] = useState([]);
 
   return (
     <AppContext.Provider value={{ cart, setCart }}>

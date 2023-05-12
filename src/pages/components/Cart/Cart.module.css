@@ -1,5 +1,5 @@
 .cart{
-    background-color: #dcfce7;
+    background-color: #cffafe;
     height: 100%;
     padding: 50px 100px;
     display: flex;
@@ -17,6 +17,8 @@
     font-weight: 900;
     font-size:2rem;
     text-align: center;
+    position: relative;
+        top: 20%;
 
 }
 .cart-item img{
@@ -41,6 +43,7 @@
 
 .cart-item p:first-of-type {
 
+    
     padding-top: 8px;
     border: 1px solid black;
     border-bottom: none;
@@ -68,6 +71,8 @@
     right:30%;
 }
 .checkout{
+    position: relative;
+    top:20%;
     align-self: center;
     padding:15px;
     font-size:3rem;
