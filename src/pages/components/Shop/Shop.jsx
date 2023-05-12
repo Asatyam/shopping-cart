@@ -1,6 +1,9 @@
 import React,{useState}  from "react";
 import Items from "../Items/Items";
 import style from "./Shop.module.css"
+import { AppContext } from "../../context";
+import { useContext } from "react";
+
 
 export default function Shop(){
 
@@ -72,13 +75,7 @@ export default function Shop(){
         price:80.00,
     },
     ]
-     const [cart,setCart] = useState([{
-        id:"1",
-        name:"iphone",
-        src:"/Items/iphone.png",
-        price:1000.00,
-        quantity:1,
-    }]);
+     const {cart,setCart} = useContext(AppContext);
 
 
         const totalItems = cart.reduce((total,x)=>total+x.quantity,0);

@@ -85,12 +85,10 @@ const App = ()=>{
         quantity:1,
     }]);
     
-    const totalItems = cart.reduce((total,x)=>total+x.quantity,0);
     return(
         <div className={style.app}>
             
-            <Home/>
-             {/* <Cart cart = {cart} setCart = {setCart} products = {products}/> */}
+             <Cart products = {products}/>
             
         </div>
     )

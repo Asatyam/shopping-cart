@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import React from "react";
-import { useState } from "react";
-import Items from "../Items/Items";
 import style from "./Cart.module.css"
-
+import { AppContext } from "../../context";
+import { useContext } from "react";
 
 function CartItem({item, handleDecrement,handleIncrement}){
     if(item.quantity>0)
@@ -23,8 +22,9 @@ function CartItem({item, handleDecrement,handleIncrement}){
     return null;
 }
 
-export default function Cart({cart,setCart}){
+export default function Cart(){
 
+    const {cart,setCart} = useContext(AppContext);
     const handleIncrement = (e)=>{
 
 

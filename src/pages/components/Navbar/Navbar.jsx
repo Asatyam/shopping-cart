@@ -13,7 +13,7 @@ export default function Navbar(){
                 <li><Link href = "/">Home</Link></li>
                 <li><Link href = "/components/Shop/Shop">Shop</Link></li>
                 <li>
-                    <Link href="/cart">
+                    <Link href="/components/Cart/Cart">
                         <button className={style['cart-btn']}>
                         <img src="cart.png" alt="cart-icon"/>
                     </button>
