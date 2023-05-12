@@ -77,17 +77,11 @@ export default function Shop(){
     ]
      const {cart,setCart} = useContext(AppContext);
 
-
-        const totalItems = cart.reduce((total,x)=>total+x.quantity,0);
-
     return(
         <div className={style.shop}>
             {products.map((product)=>{
                return  <Items products = {products} key = {product.id} id={product.id} name = {product.name} src = {product.src} price={product.price} setCart={setCart}/>
-            })}
-            <p className={style.totalItems}>{totalItems}</p>
-            
-          
+            })}   
         </div>
     )
 }

@@ -2,9 +2,13 @@
 import React from "react";
 import style from "./Navbar.module.css"
 import Link from "next/link";
+import { AppContext } from "../../context";
+import { useContext } from "react";
 
 export default function Navbar(){
 
+    const {cart,setCart} = useContext(AppContext);
+     const totalItems = cart.reduce((total,x)=>total+x.quantity,0);
     return(
        <nav className={style['nav-bar']}>
 
@@ -19,6 +23,7 @@ export default function Navbar(){
                     </button>
                     </Link>
                 </li>
+                <p className={style.totalItems}>{totalItems}</p>
             </ul>
        </nav>
     )
